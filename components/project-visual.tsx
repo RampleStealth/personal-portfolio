@@ -1,0 +1,10 @@
+export function ProjectVisual({ variant }: { variant: number }) {
+  const labels = variant === 0 ? ["Inbox", "Triage", "Review"] : variant === 1 ? ["Account", "Signals", "Briefing"] : ["Capture", "Route", "Resolve"];
+  return <div className="relative h-[360px] overflow-hidden rounded-xl border border-ink/10 bg-[#fcfcfa] p-4 shadow-card sm:h-[420px]">
+    <div className="absolute inset-0 grain opacity-[.13]" />
+    <div className="relative flex h-full flex-col rounded-lg border border-ink/10 bg-paper/85 p-4 backdrop-blur">
+      <div className="flex items-center justify-between border-b border-ink/10 pb-3"><div className="flex gap-1.5"><i className="size-2 rounded-full bg-ink/25" /><i className="size-2 rounded-full bg-ink/25" /><i className="size-2 rounded-full bg-ink/25" /></div><span className="text-[10px] font-medium text-ink/45">WORKSPACE</span></div>
+      <div className="grid flex-1 grid-cols-[.8fr_1.2fr] gap-3 pt-4"><aside className="rounded-md bg-ink/[.035] p-3"><p className="text-[10px] font-semibold uppercase tracking-wider text-ink/45">Queue</p>{labels.map((label, index) => <div className={`mt-3 rounded px-2 py-1.5 text-[10px] ${index === 1 ? "bg-ink text-paper" : "text-ink/60"}`} key={label}>{label}</div>)}</aside><div className="space-y-3"><div className="rounded-md border border-ink/10 bg-paper p-3"><div className="flex justify-between"><div className="h-2 w-20 rounded bg-ink/15" /><div className="h-2 w-8 rounded bg-moss/45" /></div><div className="mt-4 h-2 w-full rounded bg-ink/10" /><div className="mt-2 h-2 w-4/5 rounded bg-ink/10" /></div><div className="rounded-md border border-ink/10 bg-paper p-3"><p className="text-[10px] font-semibold text-moss">AI RECOMMENDATION</p><div className="mt-3 h-2 w-full rounded bg-ink/15" /><div className="mt-2 h-2 w-3/5 rounded bg-ink/10" /><div className="mt-4 flex gap-2"><span className="rounded bg-moss/10 px-2 py-1 text-[9px] text-moss">Review</span><span className="rounded bg-ink/5 px-2 py-1 text-[9px] text-ink/55">Trace</span></div></div></div></div>
+    </div>
+  </div>;
+}

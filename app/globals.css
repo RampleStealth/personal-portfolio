@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --ink: #1d2420; --paper: #f8f8f5; --moss: #315c4d; }
+* { border-color: rgb(29 36 32 / .12); }
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: var(--font-sans), Arial, sans-serif; }
+::selection { background: #cfe0d6; color: #1d2420; }
+:focus-visible { outline: 3px solid #315c4d; outline-offset: 3px; }
+.eyebrow { @apply text-[11px] font-semibold uppercase tracking-[.16em] text-moss; }
+.text-balance { text-wrap: balance; }
+.grain { background-image: radial-gradient(rgba(29,36,32,.10) .5px, transparent .5px); background-size: 5px 5px; }
