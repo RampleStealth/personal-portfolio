@@ -2,6 +2,12 @@
 
 A case-study-led portfolio documenting the products, systems, and experiments being developed through **Wong Studio**.
 
+## Live Portfolio
+
+Visit the deployed portfolio:
+
+[Visit Wong Studio Portfolio](https://wongstudio.vercel.app/)
+
 The portfolio focuses on real work at its current stage of development. Projects that are still being built or researched are labeled clearly rather than presented as finished products.
 
 ## Featured projects
@@ -152,5 +158,6 @@ Some sections, visuals, technical details, and project narratives may change as 
 **Rameses Jay Wong**
 Bacolod City, Philippines · Remote
 
-* GitHub: [RampleStealth](https://github.com/RampleStealth)
-* LinkedIn: [Rameses Jay Wong](https://www.linkedin.com/in/ramesesjaywong200211)
+- Portfolio: [wongstudio.vercel.app](https://wongstudio.vercel.app/)
+- GitHub: [RampleStealth](https://github.com/RampleStealth)
+- LinkedIn: [Rameses Jay Wong](https://www.linkedin.com/in/ramesesjaywong200211)
