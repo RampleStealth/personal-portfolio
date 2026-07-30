@@ -3,5 +3,5 @@ export const profile = {
   email: "rameseswong@gmail.com",
   location: "Bacolod City, Philippines · Remote",
   github: "https://github.com/RampleStealth",
-  linkedin: "www.linkedin.com/in/ramesesjaywong200211",
+  linkedin: "https://www.linkedin.com/in/ramesesjaywong200211",
 };
